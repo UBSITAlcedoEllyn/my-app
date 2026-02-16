@@ -1,6 +1,16 @@
+<!--
 <p>home works!</p>
 <p>{{ welcomeMessage }}</p>
 <p>Course Code: {{ courseCode }}</p>
 <p>Description: {{ description }}</p>
 <p>Units: {{ units }}</p>
 <p>Status: {{ stat }}</p>
+-->
+
+<h1>{{ appTitle }}</h1>
+
+<img [src]="userImageUrl" alt="User Avatar" width="150" />
+
+<p [class.highlight]="isHighlighted">This paragraph is highlighted</p>
+
+<p>Today's Date: {{ currentDate | date: 'fullDate' }}</p>
